@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEWITHUS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section.logo-nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #006b9f;
+            color: white;
+            height: 76px;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        section.logo-nav>nav>ul {
+            display: flex;
+
+        }
+
+
+        section.logo-nav>nav>ul>li {
+            padding: 12px;
+            list-style-type: none;
+
+            /* color: black; */
+        }
+
+        section.logo-nav>nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        /* Nav bar Ended */
+
+
+        section.home-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #467eaf;
+            color: white;
+            height: 600px
+        }
+
+        section.home-section>.home-title {
+            width: 40%;
+            margin: auto;
+        }
+
+        #home-head {
+            font-size: 35px;
+        }
+
+
+        section.home-section>.home-img img {
+            /* width: 500px; */
+            height: 400px;
+            margin-top: 25%;
+        }
+
+
+        .get-start {
+            padding: 12px;
+            margin-top: 12px;
+            background-color: #467eaf;
+            border: 0px solid rgb(214, 211, 211);
+            box-shadow: 2px 4px 5px 5px #3b6d99;
+            color: white;
+            padding-left: 33px;
+            padding-right: 33px;
+            cursor: pointer;
+        }
+
+
+
+        /* Media Query For Home Section  */
+
+        @media only screen and (max-width: 768px) {
+            section.home-section {
+                flex-direction: column;
+                height: 100%;
+            }
+
+
+            section.home-section>.home-img img {
+                /* margin: auto; */
+                margin-left: 20%;
+                margin-top: 4%;
+                width: 60%;
+            }
+        }
+
+
+        /* Home Section Media Query Done! */
+
+
+        section.about-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #07afc5;
+            height: 500px;
+
+        }
+
+
+        section.about-section>.about-img img {
+            height: 400px;
+
+        }
+
+
+        section .about-title {
+            width: 400px;
+            color: white;
+            margin-top: 90px;
+        }
+
+
+        section .heading-about {
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+
+
+        /* About Section Media Query */
+
+        @media only screen and (max-width: 768px) {
+            section.about-section {
+                flex-direction: column-reverse;
+                height: 100%;
+                margin: auto;
+            }
+
+            section .about-title {
+                padding: 10%;
+                width: 100%;
+            }
+
+            .about-img img {
+                width: 70%;
+            }
+
+        }
+
+
+        /* Service Sections */
+
+        .service-section {
+            background-color: #435d74;
+            height: 600px;
+            color: white;
+        }
+
+        .ser-heading {
+            text-align: center;
+        }
+
+        .ser-title {
+            padding: 22px;
+        }
+
+        .ser-cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .abimg img {
+            height: 400px;
+            width: 100%;
+        }
+
+        .ser-heading {
+            font-size: 35px;
+            letter-spacing: 7px;
+        }
+
+
+
+        @media only screen and (max-width: 768px) {
+            .ser-cards {
+                flex-direction: column-reverse;
+
+            }
+
+            .service-section {
+                height: 100%;
+
+            }
+
+        }
+
+
+
+        /* Contact US */
+
+        .contact-us{
+            background-color: #93c3ec;
+            height: 600px;
+        }
+
+        .contact-div{
+            padding: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="logo-nav">
+        <div class="logo">
+            <h3>Logo</h3>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="#Home" class="nav-tags">Home</a></li>
+                <li><a href="#about" class="nav-tags">About </a></li>
+                <li><a href="#Services" class="nav-tags">Services</a></li>
+                <li><a href="" class="nav-tags">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="home-section" id="Home">
+        <div class="home-title">
+            <h3 class="heading-home" id="home-head">Grow With Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis tempore expedita ipsam dolorum
+                error! Eius quisquam laboriosam iure ea alias quidem minima? Ullam reiciendis enim cum. Ut, deleniti,
+                perspiciatis voluptates veritatis laborum a, tenetur delectus neque quod adipisci quo ipsam et expedita!
+                Exercitationem?</p>
+            <div class="butns">
+                <button type="button" class="get-start">Get Started </button>
+            </div>
+        </div>
+
+
+        <div class="home-img">
+            <img src="./assets/imgs/home2.webp" alt="home-img">
+        </div>
+    </section>
+
+
+
+    <section class="about-section" id="about">
+        <div class="about-img">
+            <img src="./assets/imgs/ab-.png" alt="" srcset="">
+        </div>
+
+        <div class="about-title">
+            <h3 class="heading-about" id="about-head">About Us</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto debitis voluptatibus ex porro
+                recusandae, dignissimos corporis magnam nihil quasi modi corrupti aut laborum cupiditate delectus.
+                Repudiandae porro a ipsam quibusdam fugit corrupti modi libero laborum, incidunt quis nisi quia
+                distinctio laboriosam minima eveniet minus quod id. Totam aut esse, delectus excepturi adipisci
+                repudiandae eius quis!</p>
+        </div>
+    </section>
+
+
+
+    <section class="service-section" id="Services">
+        <div class="ser-title">
+            <h3 class="ser-heading">Services</h3>
+        </div>
+
+        <div class="ser-cards">
+            <div class="abimg">
+                <img src="./assets/imgs/serv-1.png" alt="">
+            </div>
+            <div class="abimg">
+                <img src="./assets/imgs/ser-2.png" alt="">
+            </div>
+            <div class="abimg">
+                <img src="./assets/imgs/serv-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-us">
+          <div class="contact-div">
+
+          </div>
+    </section>
+
+
+
+
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".nav-tags").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
